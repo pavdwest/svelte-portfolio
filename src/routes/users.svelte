@@ -19,19 +19,13 @@
 
   <!-- src/routes/blog.svelte -->
   <svelte:head>
-    <title>Blog</title>
+    <title>Users</title>
   </svelte:head>
 
   <div class="container">
     <h1>Users</h1>
-    <div class="blogposts">
-        <div class="item">
-          <!-- <h2>{item.title.substring(0, 20)}</h2>
-          <p>{item.body.substring(0, 80)}</p>
-          <p class="readmore">
-            <a style=" color: rgb(10, 10, 139);" href={`/blog/${post.id}`}> Read More </a>
-          </p> -->
-
+    <div class="items">
+        <div class="items">
           <table border="border-collapse" role="grid">
             <thead>
               <th><strong>email</strong></th>

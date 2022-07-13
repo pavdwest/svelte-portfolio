@@ -30,7 +30,7 @@
         <h2>{post.title.substring(0, 20)}</h2>
         <p>{post.body.substring(0, 80)}</p>
         <p class="readmore">
-          <a style=" color: rgb(10, 10, 139);" href={`/blog/${post.id}`}> Read More </a>
+          <a href={`/blog/${post.id}`}> Read More </a>
           <!-- <a style=" color: rgb(10, 10, 139);" href={`http://localhost:8000`}> Read More </a> -->
         </p>
       </div>
