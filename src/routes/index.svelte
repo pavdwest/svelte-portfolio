@@ -27,7 +27,7 @@
 
 <div class="background-div" />
 
-<style>
+<!-- <style>
   .info {
     text-align: center;
     position: relative;
@@ -82,4 +82,4 @@
   .scroll-button .arrow {
     margin-left: 0.5rem;
   }
-</style>
+</style> -->

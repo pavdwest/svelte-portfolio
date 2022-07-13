@@ -1,24 +1,25 @@
 <!-- src/routes/__layout.svelte -->
 <nav>
-  <div class="nav-container">
-    <a href="/" class="nav-logo" title="Back to Homepage">Gorbie Jarkensen</a>
-    <div class="nav-links">
-      <a href="/about" class="link">About</a>
-      <a href="/blog" class="link">Blog</a>
-      <a href="/projects" class="link">Projects</a>
-      <a href="/contact" class="link">Contact</a>
-    </div>
-  </div>
+  <ul>
+    <li><a href="/" title="Back to Homepage">Gorbie Jarkensen</a></li>
+  </ul>
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/users">Users</a></li>
+  </ul>
 </nav>
 
 <div class="container">
   <!-- Pages will be injected below -->
-  <slot></slot>
+  <slot />
 </div>
 
 <style>
-  .container {
+  /* .container {
     max-width: 1400px;
-    margin: 50px auto;
-  }
+    margin: 25px auto;
+  } */
 </style>

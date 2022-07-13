@@ -1,5 +1,4 @@
 <script context="module">
-  console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
   export const load = async ({ params, fetch }) => {
     // const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
     const res = await fetch(`http://localhost:8000/users/${params.id}`);
