@@ -2,7 +2,7 @@
 <!-- load runs before the component is rendered -->
 <script context="module">
     export const load = async ({ fetch }) => {
-      const res = await fetch('http://localhost:8000/users');
+      const res = await fetch('http://localhost:8000/notes');
       const items = await res.json();
       return {
         props: {
@@ -37,7 +37,7 @@
             <tbody>
               {#each items as item}
                 <tr>
-                  <td><a href={`/users/${item.id}`}> view </a></td>
+                  <td><a href={`/notes/${item.id}`}> view </a></td>
                   <!-- <td><a href={`/users/4`}> view </a></td> -->
                   <td>{item.email}</td>
                   <td>{item.name}</td>
