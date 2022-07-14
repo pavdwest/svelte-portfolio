@@ -1,8 +1,6 @@
 <script context="module">
   export const load = async ({ params, fetch }) => {
     console.log(params.id);
-
-    // const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
     const res = await fetch(`http://localhost:8000/users/${params.id}`);
     const data = await res.json();
 
@@ -20,26 +18,15 @@
 </script>
 
 <div class="container">
-    <!-- <h1>{data.title}</h1>
-    <p>{data.body}</p> -->
-
-
     <!-- Users -->
     <h1>{data.email}</h1>
     <p>{data.name}</p>
-
-    <!-- Users -->
-    <!-- <ul>
-        {#each data as d}
-            <li>{d.email}</li>
-        {/each}
-    </ul> -->
 </div>
 
-<style>
+<!-- <style>
     .container {
         max-width: 900px;
         margin: 50px auto;
     }
-</style>
+</style> -->
 Footer
