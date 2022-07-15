@@ -2,21 +2,12 @@
 
 <nav>
   <ul>
-    <li>
-      <a href="/" title="Back to Homepage">pureformance</a>
-      <!-- <a href="/">
-        <i class="fa-solid fa-house"></i>
-        <span>Gorbie Jarkensen</span>
-      </a> -->
-    </li>
-
-  </ul>
-  <ul class="flex border-b">
-    <li><a href="/about">About</a></li>
-    <li><a href="/notes">Notes</a></li>
-    <li><a href="/projects">Projects</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/users">Users</a></li>
+    <li><a href="/" title="Back to Homepage">pureformance</a>
+    <li><a href="/notes">notes</a></li>
+    <li><a href="/projects">projects</a></li>
+    <li><a href="/contact">contact</a></li>
+    <li><a href="/users">users</a></li>
+    <li><a href="/about">about</a></li>
   </ul>
 </nav>
 
@@ -38,7 +29,7 @@
   }
 
   li {
-    float: right;
+    float: left;
   }
 
   li a {
