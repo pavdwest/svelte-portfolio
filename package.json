@@ -24,6 +24,5 @@
     },
     "type": "module",
     "dependencies": {
-        "svelte-generic-crud-table": "^1.5.94"
     }
 }

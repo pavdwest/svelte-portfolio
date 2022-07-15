@@ -11,7 +11,7 @@
     </li>
 
   </ul>
-  <ul>
+  <ul class="flex border-b">
     <li><a href="/about">About</a></li>
     <li><a href="/notes">Notes</a></li>
     <li><a href="/projects">Projects</a></li>
@@ -30,4 +30,19 @@
     max-width: 1400px;
     margin: 25px auto;
   } */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    padding: 8px;
+  }
 </style>

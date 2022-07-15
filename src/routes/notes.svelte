@@ -39,6 +39,7 @@
   {#if (status != 200)}
   <p>Status: {status}</p>
   {:else}
+    {JSON.stringify(items[0])}
     <div class="items">
       <div class="items">
         <table border="border-collapse" role="grid">
