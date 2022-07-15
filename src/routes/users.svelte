@@ -22,6 +22,7 @@
 
   export const load = async ({ fetch }) => {
     const response = await fetch('http://localhost:8000/users');
+    const status = response.status;
 
     if (response.ok) {
       const items = await response.json();
@@ -31,7 +32,14 @@
         }
       };
     } else {
-      throw new Error(items)
+      const items = [];
+      // throw new Error(response.status);
+      return {
+        props: {
+          items,
+          status
+        }
+      };
     }
   };
 </script>
@@ -88,3 +96,7 @@
     </div>
   </div>
 </div>
+
+<style>
+
+</style>
