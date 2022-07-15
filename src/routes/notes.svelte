@@ -1,40 +1,55 @@
-<!-- src/routes/blog.svelte -->
 <!-- load runs before the component is rendered -->
 <script context="module">
-    export const load = async ({ fetch }) => {
-      const res = await fetch('http://localhost:8000/notes');
-      const items = await res.json();
+  export const load = async ({ fetch }) => {
+    const response = await fetch('http://localhost:8000/notes');
+    const status = response.status;
+
+    if (response.ok) {
+      const items = await response.json();
       return {
         props: {
           items
         }
       };
-    };
-  </script>
+    } else {
+      const items = [];
+      // throw new Error(response.status);
+      return {
+        props: {
+          items,
+          status
+        }
+      };
+    }
+  };
+</script>
 
-  <!-- Per component script -->
-  <script>
-    export let items;
-  </script>
+<!-- Per component script -->
+<script>
+  export let items;
+  export let status;
+</script>
 
-  <!-- src/routes/blog.svelte -->
-  <svelte:head>
-    <title>Users</title>
-  </svelte:head>
+<svelte:head>
+  <title>Notes</title>
+</svelte:head>
 
-  <div class="container">
-    <h1>Users</h1>
+<div class="container">
+  <h1>Notes</h1>
+  {#if (status != 200)}
+  <p>Status: {status}</p>
+  {:else}
     <div class="items">
-        <div class="items">
-          <table border="border-collapse" role="grid">
-            <thead>
-              <th>details</th>
-              <th><strong>email</strong></th>
-              <th><strong>name</strong></th>
-              <th><strong>surname</strong></th>
-              <th><strong>deactivated</strong></th>
-            </thead>
-            <tbody>
+      <div class="items">
+        <table border="border-collapse" role="grid">
+          <thead>
+            <th>details</th>
+            <th><strong>email</strong></th>
+            <th><strong>name</strong></th>
+            <th><strong>surname</strong></th>
+            <th><strong>deactivated</strong></th>
+          </thead>
+          <tbody>
               {#each items as item}
                 <tr>
                   <td><a href={`/notes/${item.id}`}> view </a></td>
@@ -45,8 +60,9 @@
                   <td>{item.deactivated}</td>
                 </tr>
               {/each}
-            </tbody>
-          </table>
-        </div>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
+  {/if}
+</div>

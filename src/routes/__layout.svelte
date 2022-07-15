@@ -2,7 +2,14 @@
 
 <nav>
   <ul>
-    <li><a href="/" title="Back to Homepage">Gorbie Jarkensen</a></li>
+    <li>
+      <a href="/" title="Back to Homepage">pureformance</a>
+      <!-- <a href="/">
+        <i class="fa-solid fa-house"></i>
+        <span>Gorbie Jarkensen</span>
+      </a> -->
+    </li>
+
   </ul>
   <ul>
     <li><a href="/about">About</a></li>

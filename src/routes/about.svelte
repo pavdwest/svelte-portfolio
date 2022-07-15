@@ -11,7 +11,7 @@
         <p>
           Software Engineer and a Technical Writer with a solid background in Computer Science, I'm
           passionate about making the web accessible for everyone. I design and develop visually
-          compell ing applications with user-friendly interaction that drive business g owth and
+          compelling applications with user-friendly interaction that drive business g owth and
           improve user experience. When I'm not solving problems, I love to create technical content
           for engineers and tech startups across the globe.
         </p>

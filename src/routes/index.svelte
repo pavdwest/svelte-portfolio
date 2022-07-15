@@ -1,6 +1,6 @@
 <!-- src/routes/index.svelte -->
 <svelte:head>
-  <title>Gorbie Jarkensen</title>
+  <title>pureformance</title>
 </svelte:head>
 
 <div class="container">
@@ -8,18 +8,9 @@
     <div class="animate-background">
       <div class="container info-container">
         <div class="info-text">
-          <h1>
-            <p class="animate-text-1">School-taught Computer Scientist,</p>
-            <p class="text-2">Self-taught Software Engineer</p>
-          </h1>
+          <h1>Home</h1>
         </div>
-        <h2 class="subtitle">
-          On a mission to help SMEs across the globe do businesses seamlessly and digitally.
-        </h2>
-        <div style="color:black" class="scroll-button animate-scroll" tabindex="0">
-          <a href="/about">Click Here</a>
-          <div class="arrow">→</div>
-        </div>
+        <p>Quick, accurate & affordable performance results at large scale</p>
       </div>
     </div>
   </div>
